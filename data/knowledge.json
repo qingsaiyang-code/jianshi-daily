@@ -1,0 +1,602 @@
+[
+  {
+    "id": "seed-01",
+    "title": "冰饮杯外的水珠，从哪里来？",
+    "summary": "杯子没有漏水。水珠来自周围的空气，冷杯壁让水蒸气凝结成了液态水。\n\n空气里有看不见的水蒸气。空气在水汽含量和气压基本不变时，降温到露点，就会达到饱和，水蒸气可能在冷表面凝结。\n\n冰饮杯壁让附近的空气降温。当杯壁温度低于露点，外侧就会挂上水珠。冬天窗玻璃内侧起雾，也是相似的过程。\n\n用一只干燥的空杯和一只装冰水的杯子做对照，观察哪只杯子外侧先出现水珠。",
+    "takeaway": "冷表面低于空气露点时，周围的水蒸气可能凝结。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "日常原理",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国国家气象局 · 露点与温度",
+        "url": "https://www.weather.gov/source/zhu/ZHU_Training_Page/definitions/dry_wet_bulb_definition/dry_wet_bulb.html"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-02",
+    "title": "水更容易烧开，饭却更难煮熟？",
+    "summary": "在高海拔地区，气压下降，水的沸点也下降。沸腾不等于水一定达到 100℃。\n\n液体沸腾与周围气压有关。海拔升高时，空气施加的压力通常变小，水在更低温度下就能沸腾。\n\n因此，用沸水煮食物时，高原上的烹煮温度可能更低，食物反而需要更长时间。压力锅通过提高锅内压力，让水可以在更高温度下沸腾。\n\n到高海拔地区旅行时，如果煮面的时间变长，先想到沸点变化；具体做法以食品和设备说明为准。",
+    "takeaway": "沸点取决于气压；水已经沸腾，并不能单独说明温度。",
+    "category": "life",
+    "subcategory": "travel",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "日常原理",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国农业部 · 高海拔烹饪",
+        "url": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/high-altitude-cooking"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-03",
+    "title": "微波加热后，食物会带着辐射吗？",
+    "summary": "微波是非电离电磁波。它把能量传给食物，并不会让食物变成放射源。\n\n微波炉利用微波使食物中的极性分子等响应交变电场，从而产生热量。食物被加热后，留下来的是热，而不是被储存起来的微波。\n\n微波加热可能不均匀，所以使用合适容器、按说明搅拌和静置很重要。金属或不适用的容器也不能随意放入。\n\n热饭时参考设备和食物说明，必要时中途搅拌，避免只凭表面温度判断整份食物的温度。",
+    "takeaway": "微波加热不会让食物具有放射性；实际需要关注的是加热和使用方式。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "日常原理",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国 FDA · 微波炉原理",
+        "url": "https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-04",
+    "title": "一度电，到底能用多久？",
+    "summary": "瓦是功率，千瓦时是电能。耗电量要把功率和使用时间一起看。\n\n日常所说的一度电，就是一千瓦时，即 1 千瓦功率持续使用 1 小时所消耗的电能。功率描述耗能快慢，电能描述总量。\n\n以恒定功率估算，100 瓦的灯使用 10 小时，耗电约 1 千瓦时。很多家电会调节功率或间歇运行，铭牌最大功率不代表全过程平均功率。\n\n比较设备耗电量时，先用“千瓦 × 小时”估算，再留意待机、调速和间歇工作的影响。",
+    "takeaway": "耗电量（千瓦时）= 平均功率（千瓦）× 时间（小时）。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "日常原理",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国能源信息署 · 如何计量电",
+        "url": "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-05",
+    "title": "为什么结冰之后，水反而更占地方？",
+    "summary": "普通冰的分子排列比液态水疏松。同样质量的水结冰后，体积通常会增大。\n\n密度是单位体积内的质量。水结成普通冰时，水分子形成较疏松的晶体结构，密度下降，因此冰可以浮在液态水上。\n\n这也解释了为什么液体容器需要留出合适空间，不能想当然地认为结冰后会缩小。具体容器是否能冷冻，应看材料和厂家说明。\n\n观察水面上的冰块：大部分体积仍在水下。漂浮并不表示它完全没有重量，而是与水的密度不同。",
+    "takeaway": "普通冰比液态水密度低；同样质量下，体积更大。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "日常原理",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国地质调查局 · 水的密度",
+        "url": "https://www.usgs.gov/water-science-school/science/water-density"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-06",
+    "title": "天空的蓝色，是从哪里来的？",
+    "summary": "阳光包含多种颜色。空气对不同波长的光散射程度不同，让我们看见蓝天。\n\n阳光穿过大气时会被散射。对大气分子造成的瑞利散射而言，较短波长的可见光比长波长更容易被散向各个方向。\n\n白天，来自天空各处的散射光进入眼睛，使天空呈蓝色。日出日落时，阳光穿过更长的大气路径，许多短波光被散走，直达眼睛的光更偏红。\n\n同一天观察正午的天空和接近日落的天空，想一想阳光在大气里走过的距离有什么不同。",
+    "takeaway": "光的散射和传播路径，参与决定了我们看到的天空颜色。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "自然科学",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国国家气象局 · 天空为什么是蓝色",
+        "url": "https://www.weather.gov/fgz/SkyBlue"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-07",
+    "title": "夏天热，主要因为离太阳更近吗？",
+    "summary": "季节变化的关键是地轴倾斜，它改变了太阳照射角度和白昼长度。\n\n地球的自转轴相对于公转轨道的垂线倾斜约 23.5 度。公转过程中，同一个半球朝向太阳的程度会变化。\n\n某半球朝向太阳时，太阳光照射更直接，白昼通常更长，因此更容易获得较多太阳能。南北半球的季节大致相反，不能用同一个日地距离解释。\n\n看到澳大利亚在十二月迎来夏天时，用地轴倾斜解释这一点，比只看日历更容易理解。",
+    "takeaway": "季节主要由地轴倾斜造成，不同半球接收阳光的条件随公转改变。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "自然科学",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国国家气象局 · 季节的成因",
+        "url": "https://www.weather.gov/fgz/Seasons"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-08",
+    "title": "月亮为什么会变成弯弯的一片？",
+    "summary": "月亮并没有变小。月相变化，是我们看到的受阳光照亮部分在变化。\n\n月球主要反射太阳光。通常情况下，月球总有约一半表面被太阳照亮，但我们从地球上看到这半面多少，取决于日、地、月的相对位置。\n\n月球绕地球运动时，能看到的亮面比例变化，形成新月、上弦、满月等月相。月相循环约为 29.5 天，普通月相变化并不是地球影子遮住了月球。\n\n连续几天记录月亮的形状和出现时间。用一个球和一盏灯，也能模拟“球没有变，看到的亮面变了”。",
+    "takeaway": "月相取决于相对位置；月食才涉及地球影子的遮挡。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "自然科学",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "NASA · 月相",
+        "url": "https://science.nasa.gov/moon/moon-phases/"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-09",
+    "title": "海水涨落，为什么和月亮有关？",
+    "summary": "潮汐与月球、太阳的引潮作用有关。实际涨落时间，还受海岸和海底地形影响。\n\n月球和太阳的引力在地球不同位置大小不同，这种差异参与形成潮汐。月球距离更近，在地球潮汐中发挥主要作用。\n\n海洋不是覆盖地球的均匀水层。海盆形状、水深和海岸等会影响真实潮汐，因此各地的涨落次数和时间并不完全相同。\n\n去海边前查看当地潮汐预报。仅凭“几点通常退潮”或月相，不能可靠判断当天某一海岸的情况。",
+    "takeaway": "天体作用驱动潮汐，具体海岸的涨落还要看当地条件。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "自然科学",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "NOAA · 潮汐的成因",
+        "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-10",
+    "title": "光年里有一个“年”，为什么却是距离？",
+    "summary": "一光年，是光在真空中传播一年走过的距离，约为 9.46 万亿千米。\n\n“光年”把速度与时间相乘，得到的是距离。就像说“步行十分钟的路”，是在借时间表达路程。\n\n光传播需要时间，所以观察遥远天体时，接收到的是它过去发出的光。天体距离以光年计越遥远，光到达我们所需的时间通常也越长。\n\n阅读天文新闻时，把“距离四光年”理解为光走四年才到达的距离，而不是一段飞行任务的时长。",
+    "takeaway": "光年是距离单位；看见远方的光，也是在看更早的信息。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "自然科学",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "NASA · 什么是光年",
+        "url": "https://science.nasa.gov/exoplanets/what-is-a-light-year/"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-11",
+    "title": "读懂了，为什么合上书却说不出来？",
+    "summary": "看着内容觉得熟悉，不等于能独立想起来。主动回忆可以帮助检验和巩固学习。\n\n重读时，眼前的文字会提供大量提示，很容易产生“我已经会了”的感觉。合上资料后尝试回忆，才能暴露哪些内容还没有掌握。\n\n提取练习可以是回答小问题、默写要点，或用自己的话解释。随后对照可靠答案修正错误；想不起来不代表白学，缺口本身就提供了方向。\n\n读完一条知识，先不看原文，用一句话回答“为什么会这样”，再核对。本站的小问题就是一个练习入口。",
+    "takeaway": "先尝试从记忆里提取，再用反馈补上缺口。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "思考与学习",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "加州大学圣迭戈分校 · 有效学习",
+        "url": "https://psychology.ucsd.edu/undergraduate-program/undergraduate-resources/academic-writing-resources/effective-studying/index.html"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-12",
+    "title": "同样学三次，为什么值得隔几天？",
+    "summary": "把学习分散到不同时间，通常比在一次学习里密集重复更有利于长期保持。\n\n间隔练习指在同一内容的学习之间留出时间。间隔会让再次回忆变得更费力，但这种努力可能有利于更持久的记忆。\n\n合适的间隔与内容难度、当前掌握程度和想记多久有关，没有适用于所有内容的固定天数。复习时结合回忆和反馈，比只机械重看更能发现问题。\n\n今天读一条，明天尝试回忆，过几天再检查。本站的回顾间隔是一种方便使用的安排，可以根据实际感受调整。",
+    "takeaway": "给学习留出间隔，也给记忆一次主动重建的机会。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "思考与学习",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "卡内基梅隆大学 · 间隔练习",
+        "url": "https://www.cmu.edu/teaching/resources/instructionalstrategies/activelearningstrategies/spacedopractice/index.html"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-13",
+    "title": "题目一混在一起，为什么就不会了？",
+    "summary": "连续做同类题时，题型已经替你提示了解法。混合练习还要求你先判断该用哪种方法。\n\n交错练习是在学习或复习中交替处理相关概念或不同类型的问题。它有机会帮助学习者区分相似内容，练习选择方法。\n\n这并不等于边学边刷消息，也不意味着初学时越杂越好。可以先获得基础，再混合几种容易混淆的题型；不同任务和熟练程度下效果可能不同。\n\n复习时，把两三种已经学过的题型混合起来，并先说出“为什么选这个方法”，再开始计算。",
+    "takeaway": "混合相关题型，可以练习识别问题，而不只是重复步骤。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "思考与学习",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "学习科学家 · 交错练习",
+        "url": "https://www.learningscientists.org/blog/2016/8/11-1"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-14",
+    "title": "为什么搜索越多，有时越相信自己？",
+    "summary": "人容易偏爱支持已有观点的信息，这种倾向叫确认偏误。\n\n当我们已经有一个判断，可能更积极地寻找支持证据，更严格地挑剔反对证据。于是，搜索次数增加，并不自动意味着判断更加全面。\n\n减少这种倾向，可以主动寻找会推翻判断的证据，比较来源质量，并提前想清楚：如果出现什么事实，我愿意改变主意？\n\n查一个有争议的话题前，分别写下“支持它的最好证据”和“反对它的最好证据”，用相同标准检查两边。",
+    "takeaway": "搜索时给反对证据一个公平进入判断的机会。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "思考与学习",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "得克萨斯大学奥斯汀分校 · 确认偏误",
+        "url": "https://ethicsunwrapped.utexas.edu/glossary/confirmation-bias"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-15",
+    "title": "“已经花了这么多”，为什么不是充分理由？",
+    "summary": "已经发生且无法收回的投入，属于沉没成本。下一步还需要重新比较未来的付出与收益。\n\n看了一半的电影不好看，却因为已经买票而坚持看完，是理解沉没成本的一个例子。票钱无法收回，但剩下的时间仍可以重新选择。\n\n过去的经历可以提供判断信息；需要警惕的是仅仅为了不承认损失，就继续投入更多。是否继续，应结合现在能改变的条件和未来结果考虑。\n\n对一个拖了很久的项目，问自己：“如果今天从零开始，考虑接下来的时间和收益，我还会选择它吗？”这只是辅助问题，不替代具体判断。",
+    "takeaway": "承认过去投入，仍然可以独立判断下一步是否值得。",
+    "category": "professional",
+    "subcategory": "economics",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "思考与学习",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国心理学会 · 如何从后悔中学习",
+        "url": "https://www.apa.org/news/podcasts/speaking-of-psychology/regret"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-16",
+    "title": "密码够复杂，为什么还是不该重复用？",
+    "summary": "重复使用密码，会让一个网站的泄露影响到其他账号。每个重要账号都需要独立密码。\n\n攻击者拿到泄露的账号密码后，可能在其他服务上尝试登录。如果多个账号共用一个密码，风险会连锁扩散。\n\n密码管理器可以帮助生成和保存较长、独立的密码，降低人脑记忆负担。管理器本身也需要受到保护，并为重要账号启用合适的多因素验证。\n\n先检查邮箱和常用账号是否复用了密码，再逐步改为独立密码。不要把真实密码输入任何聊天或不明检测页。",
+    "takeaway": "密码强度和独立性都重要；不要让一次泄露连到所有账号。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "数字生活",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国 CISA · 使用强密码",
+        "url": "https://www.cisa.gov/secure-our-world/use-strong-passwords"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-17",
+    "title": "多因素验证，多的到底是什么？",
+    "summary": "关键是验证不同类型的凭据。密码加另一个密码，并不一定构成多因素。\n\n常见验证因素包括你知道的内容、你持有的设备或凭据，以及你的生物特征。多因素验证结合不同类型，增加账户保护。\n\n不同方式的抗钓鱼能力并不相同。验证码也可能被诱骗交出，陌生的验证请求不应随意批准。是否支持更强方式，要看具体服务。\n\n为重要账号开启服务支持的多因素验证，妥善保存恢复方式，并只批准自己发起的登录请求。",
+    "takeaway": "增加不同类型的验证因素，也要警惕诱骗验证码和验证请求。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "数字生活",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国 CISA · 开启多因素验证",
+        "url": "https://www.cisa.gov/secure-our-world/turn-mfa"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-18",
+    "title": "“账号马上停用”，先别急着点链接",
+    "summary": "制造紧迫感、冒充熟悉机构，是钓鱼信息的常见手法。先核实，再操作。\n\n钓鱼信息试图让你交出凭据、下载危险文件或执行转账等操作。它可能使用熟悉的标志、姓名和看似合理的场景，不能只靠错别字识别。\n\n核实信息时，使用自己已知的官方入口或联系方式。不要把可疑消息提供的电话、链接本身，当作独立的核实渠道。\n\n收到“账户异常”消息后，退出消息，通过自己保存的应用或官方地址检查账户；对无法确认的内容保持暂停。",
+    "takeaway": "紧迫感不替代核实。用独立、已知的渠道确认消息。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "数字生活",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国 CISA · 识别钓鱼信息",
+        "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-19",
+    "title": "网址有 HTTPS，就一定可信吗？",
+    "summary": "HTTPS 保护通信链路，但不能单独证明网站经营者可靠、商品真实或内容正确。\n\nHTTPS 在 HTTP 的基础上使用加密保护连接，帮助降低传输途中被窃听或篡改的风险，并验证连接到的域名。\n\n诈骗网站也可以使用 HTTPS。浏览器的连接安全标志，描述的是连接的一部分性质，不是对交易、文章或商家信誉的全面背书。\n\n输入账号或付款前，既要检查连接，也要核对真实域名和商家信息。对近似拼写、陌生跳转保留疑问。",
+    "takeaway": "连接被加密，与站点值得信任，是两个需要分别判断的问题。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "数字生活",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "MDN · HTTPS",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-20",
+    "title": "同步了，为什么还需要备份？",
+    "summary": "同步可能把误删也传播到其他设备。备份的价值，是在出问题时能恢复过去的数据。\n\n同步让多个位置保持一致，某些错误也可能随之同步。备份强调保留可恢复的副本，尤其要考虑版本、保留时间和恢复方式。\n\n常见的 3-2-1 思路是保留三份数据，分布在不同存储形式或设备，并至少有一份异地副本。还应测试能否恢复，重要副本可考虑离线保护。\n\n挑一个重要文件，检查它是否有独立副本和历史版本，并实际尝试恢复一份测试副本。",
+    "takeaway": "有副本只是开始；能从事故中恢复，才是备份的目标。",
+    "category": "life",
+    "subcategory": "consumption",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "数字生活",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "英国教育部网络安全中心 · 3-2-1 备份",
+        "url": "https://cyber-security-hub.education.gov.uk/321-backup"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-21",
+    "title": "二十四节气，究竟在记录什么？",
+    "summary": "节气与太阳周年运动有关，是人们观察季节变化、安排生产和生活形成的知识体系。\n\n二十四节气依据太阳在一年中的视运动划分时间，并与长期积累的气候、农业和生活经验相联系。它是中国传统历法中重要的一部分。\n\n节气名称反映一定地域与历史条件下的观察经验。不同纬度、海拔和气候区，同一节气的真实天气、物候并不完全一致。\n\n到一个节气时，观察你所在城市的天气和植物变化。把传统名称当作观察入口，再对照本地情况。",
+    "takeaway": "节气有天文基础；具体天气和物候仍有地域差异。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "世界与文化",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "联合国教科文组织 · 二十四节气",
+        "url": "https://ich.unesco.org/en/RL/the-twenty-four-solar-terms-knowledge-in-china-of-time-and-practices-developed-through-observation-of-the-sun-s-annual-motion-00647"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-22",
+    "title": "一块石碑，怎样帮助人读懂古埃及？",
+    "summary": "罗塞塔石碑上，同一法令以不同文字写成，让学者有机会进行对照。\n\n罗塞塔石碑上的法令使用古埃及象形文字、世俗体和古希腊文三种书写系统。可以理解的古希腊文本，为研究其他文字提供了重要参照。\n\n破译并不是把图形逐个替换成另一种语言那么简单，而是依赖多个学者、材料和线索逐步推进。碑文是打开理解的大门之一。\n\n遇到陌生文化或概念时，先找有可靠对照的材料：原文与译文、图像与说明，往往比孤立猜测更有帮助。",
+    "takeaway": "同一内容的可靠对照，可以成为理解陌生系统的线索。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "世界与文化",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "大英博物馆 · 解读古埃及文字展览指南",
+        "url": "https://www.britishmuseum.org/sites/default/files/2022-10/Hieroglyphs_unlocking_ancient_Egypt_large_print_guide_The_British_Museum.pdf"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-23",
+    "title": "一张彩色木版画，可能出自好几个人",
+    "summary": "传统日本木版画常是画师、雕版师、印刷师和出版者共同完成的作品。\n\n我们往往只记得作品署名的画家，但传统木版画的完成包含设计、雕刻、上色套印、出版等环节。每个环节都依赖专门技艺。\n\n多色套印还需要不同版面精准对齐。画面上的线条与色彩，既来自构图，也来自材料、雕刻和印刷过程。\n\n参观版画展时，除了认画家，也看看展签上的制作方式、版次和出版信息，试着寻找套印与纸张留下的线索。",
+    "takeaway": "艺术品的样子，也由材料、工艺和协作共同塑造。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "世界与文化",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "大英博物馆 · 日本木版画制作工艺",
+        "url": "https://www.britishmuseum.org/blog/technique-making-good-impression"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-24",
+    "title": "世界地图上的大小，能直接拿来比吗？",
+    "summary": "把球面画成平面，必然付出失真代价。不同地图投影保留的性质不同。\n\n地球表面无法无失真地展开成平面。地图投影需要在面积、角度、距离等性质之间取舍，没有适合所有用途的单一投影。\n\n常见的墨卡托投影在高纬地区会明显夸大面积。若想比较国家或大陆大小，等积投影或地球仪通常比直接看墨卡托世界地图更合适。\n\n看到某个高纬地区在地图上显得特别大时，先问这张图采用什么投影，再判断面积。",
+    "takeaway": "地图是为用途做出的表达；看大小之前，先看投影。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "世界与文化",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国地质调查局 · 不同地图投影的用途",
+        "url": "https://www.usgs.gov/faqs/how-are-different-map-projections-used"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-25",
+    "title": "逢四必闰，为什么也有例外？",
+    "summary": "公历闰年规则还要看整百年份：能被 100 整除的年份，需要同时能被 400 整除才是闰年。\n\n地球公转所对应的年长不是整整 365 天。公历通过设置闰日，让日历与季节循环长期保持较接近的对应。\n\n规则是通常能被 4 整除的年份为闰年，但能被 100 整除的年份除外，除非还能被 400 整除。因此 2000 年是闰年，1900 年不是。\n\n遇到日期计算或历史上的二月二十九日，按完整规则检查。对日历软件，也别只用“年份除以四”这一条规则。",
+    "takeaway": "公历闰年：四年一闰，整百不闰，四百再闰。",
+    "category": "professional",
+    "subcategory": "science",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "世界与文化",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国海军天文台 · 历法说明",
+        "url": "https://aa.usno.navy.mil/faq/calendars"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-26",
+    "title": "“平均水平”，为什么可能不像大多数人？",
+    "summary": "平均数容易被极端值拉动。中位数提供了另一种观察典型水平的方式。\n\n平均数是所有数值相加再除以数量；中位数是把数值排序后位于中间的位置，偶数个时通常取中间两个数的平均。\n\n例如五个人分别拥有 2、3、3、4、88 本书，平均每人 20 本，中位数为 3 本。两者都算对了，却回答了不同的问题。\n\n看到平均收入、平均消费或平均等待时间时，继续问中位数、分布和样本范围，避免把一个汇总值当成每个人的情况。",
+    "takeaway": "平均数、中位数与分布一起看，才更接近完整情况。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "看懂数据",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "美国 NIST · 位置统计量",
+        "url": "https://itl.nist.gov/div898/handbook/eda/section3/eda351.htm"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-27",
+    "title": "上涨 10%，和上涨 10 个百分点一样吗？",
+    "summary": "百分点是两个百分比直接相减；百分比变化则需要选定比较基数。\n\n某活动参与率从 20% 变成 30%，是增加了 10 个百分点。若问相对于原来的参与率增长多少，则是（30−20）÷20，等于 50%。\n\n相同变化可以有不同表达。理解报道时，需要同时知道原始数值、变化后的数值，以及使用的单位和基数。\n\n阅读百分比新闻时，试着还原成“原来是多少，现在是多少”，再判断变化幅度。",
+    "takeaway": "百分点看相减；相对变化还要除以原来的基数。",
+    "category": "professional",
+    "subcategory": "economics",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "看懂数据",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "英国国家统计局 · 百分比与百分点",
+        "url": "https://service-manual.ons.gov.uk/content/numbers/percentages"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-28",
+    "title": "两件事一起变，能说明谁导致了谁吗？",
+    "summary": "相关描述共同变化，因果则需要更多证据。还可能有第三个因素同时影响两者。\n\n某段时间里，冰饮销量和泳池人数可能一起增加。这不意味着喝冰饮让人去泳池，炎热天气可能同时推动两者。\n\n判断因果需要考虑时间顺序、反向影响、共同原因、研究设计等。相关性可以提供线索，但单独一个相关数字不能完成因果论证。\n\n看到“做某事的人更成功”时，问一问：是否存在背景差异？会不会是成功后更容易做这件事？",
+    "takeaway": "一起发生可以启发问题，但还不能单独回答原因。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-26",
+    "tags": [
+      "看懂数据",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "宾夕法尼亚州立大学 · 相关与因果",
+        "url": "https://online.stat.psu.edu/stat100/Lesson05"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-29",
+    "title": "一万人投票，就一定代表所有人吗？",
+    "summary": "样本多，不代表样本选得好。谁有机会进入样本，往往和人数一样重要。\n\n在某类爱好者论坛发起投票，容易得到该论坛用户的看法，但不能直接推断所有人的态度。没有接触到投票或不愿参与的人可能系统性不同。\n\n增加同样有偏的样本，未必消除偏差。需要关注目标总体、抽样方法、响应情况和问题措辞，判断结果适用于谁。\n\n看到“九成人都认为……”时，先寻找调查对象和招募方法。没有这些信息，先把结论的适用范围留小一点。",
+    "takeaway": "先问问调查找到了谁，再看有多少人回答。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-25",
+    "tags": [
+      "看懂数据",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "宾夕法尼亚州立大学 · 抽样",
+        "url": "https://online.stat.psu.edu/stat800/Lesson03"
+      }
+    ],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-30",
+    "title": "柱子高一倍，数值就真的是两倍吗？",
+    "summary": "柱状图用长度表达数值。若纵轴截断，视觉上的差距可能被明显放大。\n\n两个数是 95 和 100。若柱状图从零开始，它们高度接近；若纵轴从 90 开始，可见柱长变成 5 和 10，看起来像相差一倍。\n\n柱状图通常应从零开始。折线图等其他图形需要结合任务判断坐标范围，不能把一个规则机械套用到所有图上。\n\n看图时先扫一眼坐标轴起点、单位和范围，再看趋势与差距。拿文字标注的原始值核对视觉印象。",
+    "takeaway": "图形的坐标范围，会影响我们对差距的直觉。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "archiveDate": "2026-10-24",
+    "tags": [
+      "看懂数据",
+      "实用通识"
+    ],
+    "sources": [
+      {
+        "name": "英国政府分析部门 · 柱状图",
+        "url": "https://analysisfunction.civilservice.gov.uk/support/communicating-analysis/introduction-to-data-visualisation-e-learning/module-5-bar-charts/"
+      }
+    ],
+    "contentKind": "seed"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "seed-ai-reliability",
+    "title": "AI 说得很像真的，就一定对吗？",
+    "summary": "表达流畅，和事实可靠，是两件需要分别检查的事。生成式 AI 可以给出看起来完整的回答，也可能编造细节、引文或并不存在的来源。NIST 的生成式 AI 风险框架把这类问题列入需要管理的风险。\n\n遇到陌生知识，可以先把回答拆成几个能核对的主张：日期是否对得上？引用的研究能否找到？原文真的支持结论吗？再到原始材料中逐项检查，而不是只看语气是否肯定。\n\n让 AI 帮忙整理问题和解释概念很有用；把一个答案收进自己的知识库之前，多走一步核验，也是在练习自己的判断力。涉及具体情境时，还应检查信息是否已经过时。",
+    "takeaway": "流畅的答案只是起点；事实、引用和适用条件还要分别核验。",
+    "category": "professional",
+    "subcategory": "thinking",
+    "zone": "ai",
+    "archiveDate": "2026-10-26",
+    "tags": ["AI 素养", "信息核验"],
+    "sources": [{ "name": "NIST · 生成式 AI 风险框架", "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence" }],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-defense-statistics",
+    "title": "看军费，为什么不能只看一个比例？",
+    "summary": "军费占国内生产总值的比例，反映的是某种统计口径下的国防支出相对于经济总量有多大。它和军费的绝对金额不是同一个指标，更不能独自概括一支军队的能力。\n\n比较数据前，要先检查年份、币值、估算方式和支出定义。不同机构对哪些开支算作国防支出，可能采用不同口径。NATO 的资料就专门解释了其国防支出定义，并提醒数据与各国预算数字之间可能存在差别。\n\n阅读防务新闻时，可以把比例、实际金额和定义放在一起看。先说明数字测量的是什么，再讨论它可能意味着什么，会比直接用一个排名推断整体实力更稳妥。这里介绍的是读数方法，不是对现实军力的评估。",
+    "takeaway": "比较防务数字，先对齐年份、币值和统计口径。",
+    "category": "professional",
+    "subcategory": "economics",
+    "zone": "defense",
+    "archiveDate": "2026-10-26",
+    "tags": ["防务通识", "数据口径"],
+    "sources": [{ "name": "NATO · 国防支出定义", "url": "https://www.nato.int/en/what-we-do/introduction-to-nato/defence-expenditures-and-natos-5-commitment" }],
+    "contentKind": "seed"
+  },
+  {
+    "id": "seed-cpi-context",
+    "title": "物价指数下降，东西就一定便宜了吗？",
+    "summary": "阅读物价新闻，要分清价格水平和价格变化的速度。消费者价格指数衡量一篮子消费品与服务价格的变化，但新闻中经常出现的同比增速，说的是指数与一年前相比变化了多少。\n\n假设某个价格指数先从 100 升到 105，再升到 107，它仍在上涨，只是第二次涨得慢了一些。涨幅回落不等于价格已经下降。判断时要确认报道说的是指数本身下降，还是同比涨幅缩小。\n\n此外，统计篮子的平均变化也不等于每个人的实际感受：购买项目、地区和支出结构不同，体验就可能不同。读新闻时先找清指标名称、比较时间和单位，再看结论。这个例子用于理解统计指标，并不是对当前物价的报道。",
+    "takeaway": "涨幅变小，仍可能在涨；先分清水平、增速与比较基期。",
+    "category": "professional",
+    "subcategory": "economics",
+    "zone": "context",
+    "archiveDate": "2026-10-26",
+    "tags": ["热点背景", "看懂数据"],
+    "sources": [{ "name": "BLS · 消费者价格指数问答", "url": "https://www.bls.gov/cpi/questions-and-answers.htm" }],
+    "contentKind": "seed"
+  }
+]
