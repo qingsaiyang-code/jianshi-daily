@@ -15,6 +15,16 @@ Workflow 只需要仓库只读权限，不需要 GitHub PAT、AI Key 或 Vercel 
 
 ## 2. 接入 Vercel
 
+仓库根目录的 `vercel.json` 已将框架和构建命令纳入版本控制：
+
+| 配置 | 值 | 作用 |
+| --- | --- | --- |
+| `framework` | `nextjs` | 按 Next.js 构建和运行 |
+| `installCommand` | `npm ci` | 严格按锁定文件安装依赖 |
+| `buildCommand` | `npm run build` | 使用项目统一构建命令 |
+
+Node.js 版本由 `package.json` 中的 `engines.node: 24.x` 固定；`vercel.json` 保留 Next.js 的默认输出目录。后续修改这些设置也走 PR，避免只有控制台里存在配置。[Vercel 配置说明](https://vercel.com/docs/project-configuration/vercel-json)。
+
 你需要登录自己的 Vercel 账号，并授权读取这个 GitHub 仓库：
 
 1. 打开 [Vercel New Project](https://vercel.com/new)，使用自己的 GitHub 账号登录。
@@ -28,7 +38,22 @@ Workflow 只需要仓库只读权限，不需要 GitHub PAT、AI Key 或 Vercel 
 
 此处仅提供配置，尚未连接你的 Vercel 账号，也未生成部署网址。原 Sites 地址不会因此被更新或替换。
 
-## 3. 持续部署与质量门禁
+如果由助手继续操作，可安装并连接 Vercel 插件，再由助手核对账户、团队和已有项目后部署。插件连接与 Vercel 对 GitHub 仓库的访问授权是两个独立环节；若仓库访问未授权，仍需维护者在自己的账号中完成。
+
+## 3. 首次上线验收
+
+部署返回网址并且状态为 Ready 后，再检查：
+
+- 首页正常加载，归档和分类可切换，搜索“光年”能够找到历史卡片。
+- 收藏后刷新仍保留；隐藏卡片后可恢复。
+- 在部署域名上复制分享链接，打开链接能直接读到对应知识；海报中的链接也使用部署域名。
+- 手机浏览时没有水平溢出。
+- 联网问答仍明确显示未接入，不能把 HTTP 503 当作部署故障。
+- Vercel 的 Git 设置连接 `qingsaiyang-code/jianshi-daily`，生产分支为 `main`。
+
+线上域名与 localhost 的浏览器存储彼此隔离，本机收藏不会自动出现在新网址。记录真实部署域名、对应提交和验收结果，再开始下一项功能。
+
+## 4. 持续部署与质量门禁
 
 Vercel 的 Git 集成会对分支推送建立预览，对生产分支 main 的提交建立生产部署。[官方 Git 部署说明](https://vercel.com/docs/git)。
 
@@ -42,7 +67,7 @@ Vercel 的 Git 集成会对分支推送建立预览，对生产分支 main 的�
 
 Vercel 生产构建也可能单独失败，合并后仍需检查 Ready 状态。CI 通过并不等于发布成功。不要同时添加第二套基于 Vercel token 的 Actions 部署，否则可能重复部署。
 
-## 4. 后续密钥与费用
+## 5. 后续密钥与费用
 
 后续联网问答、AI 提炼通常需要提供商账户与预算。密钥配置在 Vercel 的 Environment Variables，本地放 `.env.local`，通过服务端读取。不得使用 `NEXT_PUBLIC_` 前缀，不提交真实值。`.env.example` 仅保留变量名称与说明。
 
