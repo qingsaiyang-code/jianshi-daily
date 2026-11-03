@@ -1,49 +1,69 @@
-# GitHub Actions 与 Vercel
+# GitHub Actions 与 Netlify
 
-首版使用 Next.js + Vercel 托管，不需要自建服务器。非商业个人项目可从 Hobby 计划起步；有资源配额限制，商业用途应按届时条款选择计划。[Vercel Hobby 官方说明](https://vercel.com/docs/plans/hobby)。
+当前部署目标为 Netlify。使用现有 Next.js 项目和 GitHub 仓库，通过 Git 触发构建，不需要自建服务器。原 Vercel 方案因账号验证未完成而停止；原 Sites 网站和 Netlify 账号中的其他项目各自保留。
 
-## 1. CI 做什么
+## 1. CI 与仓库配置
 
-`.github/workflows/ci.yml` 在向 main 推送或向 main 提交 PR 时运行：
+`.github/workflows/ci.yml` 在 main 推送和指向 main 的 PR 中运行 Node 24、`npm ci`、ESLint、TypeScript、单元测试、生产构建和 Playwright。检查名为 `quality-gate`，main 已要求它通过。
 
-1. 安装 Node.js 24，使用 `npm ci` 重现锁定依赖。
-2. ESLint、TypeScript、知识结构与业务单元测试。
-3. Next.js 生产构建。
-4. 安装 Chromium，运行 Playwright 测试；失败时保留截图、trace 与报告。
+`netlify.toml` 管理部署设置：
 
-Workflow 只需要仓库只读权限，不需要 GitHub PAT、AI Key 或 Vercel token。PR 检查名为 `quality-gate`。
+| 设置 | 值 |
+| --- | --- |
+| Base directory | 仓库根目录，界面中留空 |
+| Build command | `npm ci && npm run build` |
+| Publish directory | `.next` |
+| Node.js | `24` |
+| 生产分支 | 在 Netlify 中选择 `main` |
 
-## 2. 接入 Vercel
+Netlify 识别 Next.js 后自动安装平台适配器，并把 Route Handlers 部署为函数。保留现有 Next.js 配置和服务端 API，不改成纯静态导出，也不添加 SPA 通配重定向。[Next.js 官方适配说明](https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/)。
 
-你需要登录自己的 Vercel 账号，并授权读取这个 GitHub 仓库：
+Netlify 默认会先执行一次 `npm install`。本项目在构建命令中显式执行 `npm ci`，用锁定文件重新安装后再构建；这会增加一点安装时间，用来确保最终应用依赖与 CI 一致。Node 版本由 `netlify.toml`、`.nvmrc` 和 `package.json` 对齐为 24。
 
-1. 打开 [Vercel New Project](https://vercel.com/new)，使用自己的 GitHub 账号登录。
-2. Import `qingsaiyang-code/jianshi-daily`。仓库暂未创建或未授权时不会出现在列表中。
-3. Framework Preset 使用 Next.js；Root Directory 使用仓库根目录 `./`。
-4. Node.js 选择 24.x；Install Command 为 `npm ci`，Build Command 为 `npm run build`。
-5. 不手动填写 Output Directory，不配置 API 密钥，点击 Deploy。
-6. 等待部署状态为 Ready，打开返回的网址，在手机和桌面验证。
+## 2. 网页导入 GitHub 仓库
 
-不要把整个旧交接包或 `site/` 作为 Vercel 根目录，新仓库内容从 `jianshi-daily/` 内部开始。
+1. 登录 [Netlify](https://app.netlify.com/)，使用已有账号和团队。
+2. 点 **Add new project → Import an existing project → GitHub**。
+3. 授权 Netlify 访问 `qingsaiyang-code/jianshi-daily`；授权只需覆盖该仓库。
+4. 选择 `jianshi-daily`，生产分支为 `main`。先让本次配置 PR 通过检查并由维护者审阅合并，再执行首次发布。
+5. 核对上表设置。GitHub 仓库根目录就是应用根目录，不能填旧项目的 `site/` 或本机 `jianshi-daily/` 路径。
+6. Project name 建议 `jianshi-daily`；若名称被占用，采用平台提供的可用名称。首版无需环境变量或 API 密钥。
+7. 点击部署，观察构建日志；确认 Next.js 适配完成，构建与部署均成功，再打开平台返回的网址。
+8. 若界面把“构建完成”和“公开发布”分为两步，在需要对外访问时再选择 Publish，并用未登录浏览器确认网址能打开。新额度方案的项目可能默认私有，见官方价格页。
 
-此处仅提供配置，尚未连接你的 Vercel 账号，也未生成部署网址。原 Sites 地址不会因此被更新或替换。
+这里使用 Git 导入，让 Netlify 负责 Next.js 构建和服务端函数；拖拽上传更适合已构建的静态文件。账号中已有的其他项目各自保留。
 
-## 3. 持续部署与质量门禁
+浏览器中登录成功不等于助手取得 API 权限。当前可由维护者在网页完成导入，助手核对配置和公开部署结果；需要 CLI 操作时再单独授权，不把 token 写入仓库。
 
-Vercel 的 Git 集成会对分支推送建立预览，对生产分支 main 的提交建立生产部署。[官方 Git 部署说明](https://vercel.com/docs/git)。
+## 3. 免费额度
 
-**GitHub CI 与 Vercel 部署默认并行；单独加一个 CI 文件，不会让 Vercel 自动等它成功。** 本项目通过“保护 main → PR 必须通过 quality-gate → 合并后才进入生产分支”建立发布门禁。首次初始化 main 的推送是引导步骤，在 CI 通过之后才导入 Vercel。
+截至 2026-11-02，Netlify 公布的新 Free 额度方案为 300 credits/月，生产发布每次 15 credits，流量、请求与函数运行也计入额度；预览和分支构建不按生产发布次数收费。免费额度用完后项目可能暂停。[官方价格页](https://www.netlify.com/pricing/)。
 
-必须在 GitHub 配置 [main 分支保护](GIT-WORKFLOW.md)，并让规则对维护者也生效。这样后续流程就是：
+现有账号可能使用旧计费方案，应在 **Usage & billing** 查看当前套餐和余量，以账号界面为准。此次迁移仅准备配置与导入项目，不要求升级套餐或开启自动充值。频繁合并生产分支也可能消耗发布额度，后续每天更新知识时应单独评估内容存储方案。
+
+## 4. 首次上线验收
+
+- 首页和图标能加载，手机上无水平溢出。
+- 搜索“光年”能找到历史归档，分类与日期筛选可组合使用。
+- 收藏后刷新仍保留；隐藏卡片后可恢复。
+- 在部署域名复制分享链接，重新打开能直接读到对应卡片；海报也使用该域名。
+- `POST /api/search` 返回预期的 HTTP 503 和 `SEARCH_NOT_CONFIGURED`，说明服务端路由存在；联网问答尚未接入。
+- Netlify 的 Git 连接指向本仓库，生产分支为 main，后续 PR 有 Deploy Preview。
+
+localhost 与部署域名的浏览器存储独立，本机收藏不会自动迁入新网址。记录真实网址、发布提交、适配器版本和验收结果；CI 通过本身不能证明网站已经上线。
+
+## 5. 持续部署与质量门禁
+
+GitHub Actions 与 Netlify 默认可同时运行。发布门禁由受保护的 main 提供：功能分支先走 PR，`quality-gate` 成功并验收预览后才能合并；Netlify 以 main 作为生产分支。
 
 ```text
-功能分支 → PR → CI + Vercel 预览 → 自己验收 → 合并 main → Vercel 生产部署
+功能分支 → PR → CI + Netlify Deploy Preview → 维护者验收 → 合并 main → 生产构建与发布
 ```
 
-Vercel 生产构建也可能单独失败，合并后仍需检查 Ready 状态。CI 通过并不等于发布成功。不要同时添加第二套基于 Vercel token 的 Actions 部署，否则可能重复部署。
+首次导入时先核对 main 已通过检查。后续仍要检查 Netlify 的实际部署结果；首次验收后可用一次正常的文案或样式 PR，验证“推送有预览、合并后生产更新”的整条链路。
 
-## 4. 后续密钥与费用
+## 6. 密钥与持久数据
 
-后续联网问答、AI 提炼通常需要提供商账户与预算。密钥配置在 Vercel 的 Environment Variables，本地放 `.env.local`，通过服务端读取。不得使用 `NEXT_PUBLIC_` 前缀，不提交真实值。`.env.example` 仅保留变量名称与说明。
+后续联网问答和 AI 提炼的密钥放在 Netlify 项目的 Environment variables，本地放 `.env.local`。服务端密钥不使用 `NEXT_PUBLIC_` 前缀；`.env.example` 只保留说明。
 
-数据库和内容采集都将在后续功能中单独设计。目前 JSON 跟随构建发布，线上函数不能通过写本地 JSON 达成永久更新；新的已审核 JSON 需通过 Git 提交和构建部署发布。
+当前 JSON 随构建发布，函数运行时写入本地 JSON 不会成为永久知识库。自动采集、AI 提炼、定时任务与云端个人数据将在后续版本单独实现。

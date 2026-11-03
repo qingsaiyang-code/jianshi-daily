@@ -113,6 +113,6 @@ git push -u origin main
 
 ## 5. 确认完成
 
-推送后打开 `https://github.com/qingsaiyang-code/jianshi-daily`，应能看到源码和 README；Actions 中出现 `CI`，其中检查名为 `quality-gate`。等待它通过，再按照 [部署指南](DEPLOYMENT.md) 导入 Vercel，并启用 main 分支保护。
+推送后打开 `https://github.com/qingsaiyang-code/jianshi-daily`，应能看到源码和 README；Actions 中出现 `CI`，其中检查名为 `quality-gate`。等待它通过，再按照 [部署指南](DEPLOYMENT.md) 导入 Netlify，并确认 main 分支保护已启用。
 
-首次完整链路是：本地通过 → 第一个提交 → GitHub → CI 通过 → Vercel 导入 → 手机打开部署网址。这个过程需要你本人登录 GitHub 与 Vercel；项目代码已经不依赖任何私有平台凭据。
+首次完整链路是：本地通过 → 第一个提交 → GitHub → CI 通过 → Netlify 导入 → 手机打开部署网址。这个过程需要你本人登录 GitHub 与 Netlify；首版应用无需 API 密钥。

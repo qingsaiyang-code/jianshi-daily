@@ -33,7 +33,7 @@ git push -u origin HEAD
 gh pr create --base main --fill
 ```
 
-把暂存路径和提交说明改成对应的实际文件和功能。CI 在 PR 中自动运行，Vercel 接入后会单独提供预览链接。打开预览，验证桌面、手机和真实操作；CI 与预览都完成后，在 GitHub 选择 **Squash and merge**，把一个功能整理成一个 main 提交。
+把暂存路径和提交说明改成对应的实际文件和功能。CI 在 PR 中自动运行，Netlify 接入后会单独提供 Deploy Preview 链接。打开预览，验证桌面、手机和真实操作；CI 与预览都完成后，在 GitHub 选择 **Squash and merge**，把一个功能整理成一个 main 提交。
 
 ```powershell
 git switch main
@@ -50,4 +50,4 @@ GitHub Free 的公开仓库支持分支保护；实际入口以仓库界面为�
 
 ## 已发布功能需要回退
 
-已推送的历史使用 `git revert` 生成反向提交，走相同 PR 流程。不要 `reset --hard` 后 force push。Vercel 的回滚只改变部署状态，回滚后仍应提交对应的代码修复，避免下一次部署重新带入问题。
+已推送的历史使用 `git revert` 生成反向提交，走相同 PR 流程。不要 `reset --hard` 后 force push。Netlify 的部署回退只改变发布状态，回退后仍应提交对应的代码修复，避免下一次部署重新带入问题。
