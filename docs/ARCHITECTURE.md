@@ -2,7 +2,7 @@
 
 ## ADR-001：一个仓库，清楚的模块边界
 
-使用 Next.js App Router + React + TypeScript + 普通 CSS，部署到 Vercel。Node.js 固定为 24 系列；依赖通过 package-lock.json 锁定，CI 使用 npm ci。
+使用 Next.js App Router + React + TypeScript + 普通 CSS，通过 GitHub 连接 Netlify 持续部署。Node.js 固定为 24 系列；依赖通过 package-lock.json 锁定，CI 使用 npm ci。
 
 Next.js 可把同一份仓库中的 UI 和服务端 API 分开，又不要求初学者维护两套部署或跨域。与 Astro 相比，本项目的收藏状态、实时搜索和未来服务端接口较多，React 交互模型更贴合这个迭代方向。首版数据量小，不引入搜索集群、Redis、消息队列、独立后端或 monorepo。
 
@@ -38,6 +38,14 @@ MVP 把公开知识传给客户端，支持即时检索；未来数据规模增�
 ## ADR-004：真实状态优先
 
 联网问答是核心后续功能，当前入口显示未接入，API 返回带错误码的 503。自动抓取和每日内容生成均没有启用，没有注册 cron 或云端自动任务。每日展示已有内容、按日期读取静态档案、每天自动生成新知识是三种不同能力。
+
+## ADR-005：托管切换为 Netlify
+
+Vercel 的手机号验证阻止了首次发布，因此改用现有 Netlify 账号连接同一个 GitHub 仓库。应用继续使用 Next.js App Router 和 Route Handlers，前后端接口及知识数据格式保持兼容。
+
+`netlify.toml` 声明 Node 24、锁定依赖安装与生产构建命令、`.next` 发布目录。Netlify 自动提供 Next.js 适配层，无须手动安装或锁定适配器版本；其版本由平台维护，上线时应从构建日志记录实际版本并验收页面与 API。[Netlify 官方说明](https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/)。
+
+原 Vercel 部署分支保留历史，新配置从 main 独立建分支，经 PR 和 quality-gate 验证。首次上线仍需维护者在 Netlify 中授权 GitHub 仓库，平台账号登录不能由项目代码替代。当前主部署说明见 `docs/DEPLOYMENT.md`。
 
 ## 视觉设计
 

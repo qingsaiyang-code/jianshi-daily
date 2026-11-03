@@ -69,7 +69,7 @@ jianshi-daily/
 1. [从本机运行到第一次推送](docs/GETTING-STARTED.md)
 2. [每次改动、测试与提交的规范](CONTRIBUTING.md)
 3. [Git 分支和 PR 操作手册](docs/GIT-WORKFLOW.md)
-4. [Vercel 与 GitHub Actions 部署](docs/DEPLOYMENT.md)
+4. [Netlify 与 GitHub Actions 部署](docs/DEPLOYMENT.md)
 5. [技术选择与边界](docs/ARCHITECTURE.md)
 6. [后续功能的实施顺序](docs/ROADMAP.md)
 
